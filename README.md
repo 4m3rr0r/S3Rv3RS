@@ -57,7 +57,7 @@ The script will automatically install these packages if they are missing:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/S3Rv3RS.git
+git clone https://github.com/4m3rr0r/S3Rv3RS.git
 cd S3Rv3RS
 chmod +x S3Rv3RS
 sudo mv S3Rv3RS /usr/local/bin/

